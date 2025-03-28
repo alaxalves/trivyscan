@@ -1,0 +1,1 @@
+from  .trivyscan import scan, get_bin

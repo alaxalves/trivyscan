@@ -2,8 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="trivyscan",
-    version="0.0.1",
-    packages=find_packages(),
+    version="0.0.3",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     package_data={"trivyscan": ["bin/trivy"]},
     include_package_data=True,
     install_requires=[],
