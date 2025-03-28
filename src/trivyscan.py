@@ -2,8 +2,9 @@ import subprocess
 import os
 from pathlib import Path
 
-INSTALL_DIR = os.path.join(Path.cwd(), "bin")
-TRIVY_BIN = os.path.join(INSTALL_DIR, "trivy")
+# INSTALL_DIR = os.path.join(Path.cwd(), "bin")
+# TRIVY_BIN = os.path.join(INSTALL_DIR, "trivy")
+TRIVY_BIN = Path(__file__).parent / "bin" / "trivy"
 TRIVY_VERSION = "0.59.1"
 
 def get_bin():
