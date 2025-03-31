@@ -2,10 +2,9 @@ from setuptools import setup, find_packages
 
 setup(
     name="trivyscan",
-    version="0.0.4",
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
-    package_data={"trivyscan": ["bin/trivy"]},
+    version="0.0.5",
+    packages=find_packages(),
+    package_data={'': ['*.zip', 'trivy']},
     include_package_data=True,
     install_requires=[],
     author="Alax Alves",
@@ -17,5 +16,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.9',
+    python_requires='>=3.9'
 )
