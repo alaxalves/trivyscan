@@ -1,1 +1,3 @@
-from .src.trivyscan import scan
+from .trivyscan.src import scan
+
+__all__ = ["scan"]

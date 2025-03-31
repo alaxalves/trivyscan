@@ -1,7 +1,7 @@
 import os
 import pytest
 from unittest.mock import patch
-from src.trivyscan import get_bin
+from trivyscan import get_bin
 from pathlib import Path
 
 
